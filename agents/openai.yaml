@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kalodata Authorized Export"
+  short_description: "Export and clean Kalodata product, creator, and video data."
+  default_prompt: "Use $kalodata-authorized-export to export Top 10 creator and video data for my Kalodata product URL using my current Cookie file."
