@@ -7,6 +7,8 @@ description: Export Kalodata product-detail data through the account's normal we
 
 Use only a Cookie file the user explicitly supplies for the current task. Never place Cookie values in logs, source files, outputs, or this skill.
 
+Run `scripts/kalodata_batch_export.cjs` instead of creating new probe or export scripts in the workspace. It uses CommonJS Playwright, a visible isolated session, real mouse clicks, and system-temp downloads. Supply a Cookie JSON path and a newline-delimited URL file; keep only final Excel deliverables under `D:\kalodata`.
+
 ## Workflow
 
 1. Accept a current Cookie file and one or more Kalodata product URLs. Unless the user specifies otherwise, use the URL's market, the past 90 days, transaction amount descending, and Top 10 creators plus Top 10 videos/advertising. State that each exported row consumes allowance.
